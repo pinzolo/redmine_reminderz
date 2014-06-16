@@ -28,7 +28,7 @@ namespace :redmine do
     options[:ratio_lte] = ENV['ratio_lte'].to_i if ENV['ratio_lte']
 
     Mailer.with_synched_deliveries do
-      Mailer.reminders(options)
+      Mailer.reminderz(options)
     end
   end
 end
