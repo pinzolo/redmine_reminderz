@@ -1,3 +1,0 @@
-= redmine_reminderz
-
-Description goes here
