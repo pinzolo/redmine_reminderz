@@ -1,4 +1,5 @@
 # redmine_reminderz
+[![Build Status](https://secure.travis-ci.org/pinzolo/redmine_reminderz.png)](http://travis-ci.org/pinzolo/redmine_reminderz)
 
 Add extra filters for redmine reminders
 
