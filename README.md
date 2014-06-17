@@ -20,8 +20,9 @@ $ touch tmp/restart.txt
 
 ## Extra options
 
-### redimine:reminderz task
+### redimine:send_reminderz task
 
+Can use options of redmine:send_reminders task.
 About default options, see also redmine/lib/tasks/reminder.rake
 
 * ratio_gt  => max done ratio (excludes value)
