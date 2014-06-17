@@ -8,7 +8,7 @@ Add extra filters for redmine reminders
 ### 1. Clone to your Redmine's plugins directory:
 
 ```sh
-$ git clone https://gihub.com/pinzolo/redmine_reminderz.git plugins/redmine_reminderz
+$ git clone https://github.com/pinzolo/redmine_reminderz.git plugins/redmine_reminderz
 ```
 
 ### 2. Restart your Redmine:
