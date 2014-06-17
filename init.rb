@@ -7,4 +7,4 @@ Redmine::Plugin.register :redmine_reminderz do
   author_url 'https://github.com/pinzolo'
 end
 
-require_relative 'lib/mailerz'
+require_relative 'lib/reminderz'
