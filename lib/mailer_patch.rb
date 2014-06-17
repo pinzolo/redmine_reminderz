@@ -31,15 +31,15 @@ module Reminderz::MailerPatch
         reminder(assignee, issues, days).deliver if assignee.is_a?(User) && assignee.active?
       end
     end
-  end
 
-  private
-  def apply_extra_options(issue_scope, options)
-    issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio > ?",  options[:ratio_gt])  if options[:ratio_gt]
-    issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio >= ?", options[:ratio_gte]) if options[:ratio_gte]
-    issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio < ?",  options[:ratio_lt])  if options[:ratio_lt]
-    issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio <= ?", options[:ratio_lte]) if options[:ratio_lte]
-    issue_scope
+    private
+    def apply_extra_options(issue_scope, options)
+      issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio > ?",  options[:ratio_gt])  if options[:ratio_gt]
+      issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio >= ?", options[:ratio_gte]) if options[:ratio_gte]
+      issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio < ?",  options[:ratio_lt])  if options[:ratio_lt]
+      issue_scope = issue_scope.where("#{Issue.table_name}.done_ratio <= ?", options[:ratio_lte]) if options[:ratio_lte]
+      issue_scope
+    end
   end
 end
 
