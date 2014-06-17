@@ -1,3 +1,3 @@
-module Mailerz ; end
+module Reminderz ; end
 
 require_relative 'mailers_patch'

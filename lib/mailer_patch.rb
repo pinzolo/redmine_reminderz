@@ -1,4 +1,4 @@
-module Mailerz::MailerPatch
+module Reminderz::MailerPatch
   extend ActiveSupport::Concern
 
   module ClassMethods
@@ -44,4 +44,4 @@ module Mailerz::MailerPatch
 end
 
 require_dependency 'mailer'
-Mailer.__send__(:include, Mailerz::MailerPatch)
+Mailer.__send__(:include, Reminderz::MailerPatch)
